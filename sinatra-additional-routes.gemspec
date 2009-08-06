@@ -23,7 +23,8 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "lib/sinatra/additional_routes.rb"
+     "lib/sinatra/additional_routes.rb",
+     "sinatra-additional-routes.gemspec"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/cryx/sinatra-additional-routes}
