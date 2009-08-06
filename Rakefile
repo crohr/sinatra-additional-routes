@@ -1,12 +1,13 @@
 require 'rubygems'
 require 'rake'
+require 'jeweler'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sinatra-additional-routes"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Adds some of the missing HTTP methods to the Sinatra router.}
+    gem.description = %Q{Adds some of the missing HTTP methods (e.g. OPTIONS) to the Sinatra router.}
     gem.email = "cyril.rohr@gmail.com"
     gem.homepage = "http://github.com/cryx/sinatra-additional-routes"
     gem.authors = ["Cyril Rohr"]
@@ -17,25 +18,26 @@ rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/*_test.rb'
-  test.verbose = true
-end
-
-begin
-  require 'rcov/rcovtask'
-  Rcov::RcovTask.new do |test|
-    test.libs << 'test'
-    test.pattern = 'test/**/*_test.rb'
-    test.verbose = true
-  end
-rescue LoadError
-  task :rcov do
-    abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
-  end
-end
+# TODO Adds specs
+# require 'rake/testtask'
+# Rake::TestTask.new(:test) do |test|
+#   test.libs << 'lib' << 'test'
+#   test.pattern = 'test/**/*_test.rb'
+#   test.verbose = true
+# end
+# 
+# begin
+#   require 'rcov/rcovtask'
+#   Rcov::RcovTask.new do |test|
+#     test.libs << 'test'
+#     test.pattern = 'test/**/*_test.rb'
+#     test.verbose = true
+#   end
+# rescue LoadError
+#   task :rcov do
+#     abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
+#   end
+# end
 
 
 
