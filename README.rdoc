@@ -14,6 +14,6 @@ Adds some of the missing HTTP methods to the Sinatra router. Currently, adds onl
     end
   end
 
-# Copyright
+= Copyright
 
 Copyright (c) 2009 Cyril Rohr. See LICENSE for details.
